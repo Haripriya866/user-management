@@ -12,9 +12,10 @@ class UpdateUser extends Component {
     department: "",   
   };
 
+  
   componentDidMount() {
-    const { id } = this.props.match.params;  
-
+    const { id } = this.props.match.params; 
+   
     if (id) {
       axios
         .get(`https://jsonplaceholder.typicode.com/users/${id}`)
@@ -32,7 +33,7 @@ class UpdateUser extends Component {
         .catch((error) => {
           console.error("Error fetching user data:", error);
         });
-    }
+    }   
   }
 
   onChangeFirstname = (event) => {

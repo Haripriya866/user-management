@@ -133,7 +133,7 @@ class AddUser extends Component {
         this.props.history.push("/");
       })
       .catch((error) => {
-        this.setState({ errorMessage: "Failed to update user." });
+        this.setState({ errorMessage: "Failed to Add user." });
         console.error(error);
       });
   };
