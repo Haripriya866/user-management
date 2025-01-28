@@ -1,70 +1,148 @@
-# Getting Started with Create React App
+### Setup Instructions
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+* Prerequisites:
+	Node.js (v20.18.0)
+	npm (comes with Node.js)
+	Git
 
-## Available Scripts
+* Initial Setup:
+    open root folder for project in vscode:
+        cd user management dashboard
+    
+    initialize git in this folder (user management dashboard):
+        git init
 
-In the project directory, you can run:
+    Set Up the Frontend:
 
-### `npm start`
+        Run the following command to generate a React app (npx create-react-app frontend)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+        Navigate to the frontend folder:
+        cd ../frontend
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+        Install the necessary dependencies:
+        npm install axios react-router-dom
 
-### `npm test`
+    Set Up the Backend:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+        Create a new folder for the backend:
+        mkdir backend
 
-### `npm run build`
+        Navigate to the frontend folder:
+        cd ../backend
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+        Initialize the backend project:
+	    npm init -y
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+        Install required dependencies:
+	    npm install axios cors express
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+* Folder Structure and Logic:
+    Frontend:
 
-### `npm run eject`
+        The src folder contains the main logic for the React application.
+		Components for the project are created in the components/ folder within src.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+    Backend:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+        The backend uses Express.js for setting up APIs and CORS for cross-origin resource sharing.
+		axios is used for making HTTP requests.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+* Running the Application:
+    Start the Backend:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+        Navigate to the backend folder:
+		cd backend
 
-## Learn More
+        Run the server (you can add a server.js file to define your logic):	
+		node server.js
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+    Start the Frontend:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+        Navigate to the frontend folder:
+		cd ../frontend
 
-### Code Splitting
+        Start the React development server:
+		npm start
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+# Title
+ReactJS Full Stack Assignment - User Management Dashboard
 
-### Analyzing the Bundle Size
+## Objective
+Develop a simple web application where users can view, add, edit, and delete user details from a mock backend API.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Demo
 
-### Making a Progressive Web App
+Link: https://bookstore-website-frontend.vercel.app
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Tech Stack
+Use ReactJS, React Router, HTML, CSS, JavaScript and Github for hosting the repository.
 
-### Advanced Configuration
+## Completion Instructions
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### Functionality
+#### Must Have
+* View: Display all users by fetching data from the '/users' endpoint.
+* Add: Allow adding a new user by posting to the '/users' endpoint. (Note: JSONPlaceholder won't actually add the user, but will simulate a successful response.)
+* Edit: Allow editing an existing user. This should involve fetching the current data for a user, allowing for edits, and then putting the updated data back via the API.
+* Delete: Allow users to be deleted, by sending a delete request to the API.
 
-### Deployment
+#### Nice to Have
+* Implement pagination or infinite scrolling for the user list.
+* Add client-side validation for the user input form.
+* Make the interface responsive.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### Guidelines to develop a project
+#### Must Have
+* Your primary focus should be on functionality. However, a clean UI will be appreciated.
+* You may use vanilla JavaScript or any JavaScript framework/library of your choice like React, Angular, Vue, etc.
+* Consider using tools like Axios or Fetch API for HTTP requests.
+* Ensure the solution is modular and scalable.
+* Document any assumptions you make.
 
-### `npm run build` fails to minify
+### Submission Instructions
+* Share the above implementation using a public git repo
+* Include a README detailing setup and run instructions.
+* Reflect on the challenges faced during the development process and any improvements you would make if given more time.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Resources
+## Design files
+AddUser, UpdateUser, UserList
+
+## APIS
+* Use JSONPlaceholder, a free online REST API that you can use for demonstration and test purposes.
+* Specifically, use the '/users' endpoint to fetch and manipulate user data.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+  
+
+
+
