@@ -1,6 +1,5 @@
 import { Component } from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
-// import axios from "axios";
 
 import UserList from "./components/UserList";
 import AddUser from "./components/AddUser";
@@ -13,18 +12,6 @@ class App extends Component {
     users: [],
   };
 
-  // componentDidMount() {
-  //   axios
-  //     .get("https://jsonplaceholder.typicode.com/users")
-  //     .then((response) => {
-  //       this.setState({ users: response.data });
-  //     })
-  //     .catch((error) => {
-  //       this.setState({ error: "Failed to fetch users." });
-  //       console.error(error);
-  //     });
-  // }
-
   addUser = (newUser) => {
     this.setState((prevState) => ({
       users: [...prevState.users, newUser],
@@ -35,7 +22,7 @@ class App extends Component {
     return (
       <BrowserRouter>
         <div className="app-container">
-          <h1>User Management</h1>
+          <h1 className="main-heading">User Management</h1>
           <Switch>
             <Route exact path="/" component={UserList} />
             <Route exact path="/users" component={AddUser} />

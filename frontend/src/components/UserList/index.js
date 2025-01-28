@@ -1,5 +1,4 @@
 import { Component } from "react";
-// import React, { Component } from "react";
 import axios from "axios";
 import { Link ,withRouter} from "react-router-dom";
 
@@ -85,5 +84,5 @@ class UserList extends Component {
     );
   }
 }
-// export default UserList;
+
 export default withRouter(UserList);
