@@ -70,9 +70,6 @@ ReactJS Full Stack Assignment - User Management Dashboard
 ## Objective
 Develop a simple web application where users can view, add, edit, and delete user details from a mock backend API.
 
-## Demo
-
-Link: https://bookstore-website-frontend.vercel.app
 
 ## Tech Stack
 Use ReactJS, React Router, HTML, CSS, JavaScript and Github for hosting the repository.
