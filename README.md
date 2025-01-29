@@ -27,7 +27,7 @@
         Create a new folder for the backend:
         mkdir backend
 
-        Navigate to the frontend folder:
+        Navigate to the backend folder:
         cd ../backend
 
         Initialize the backend project:
