@@ -1,0 +1,12 @@
+.app-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main-heading{
+  font-family:'Roboto';
+  font-size:30px;
+  margin-top:40px;
+  margin-bottom: 0px;
+}
