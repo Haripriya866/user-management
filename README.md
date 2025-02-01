@@ -6,7 +6,7 @@
 	Git
 
 * Initial Setup:
-    open root folder for project in vscode:
+    open root folder for project in vs code:
         cd user management dashboard
     
     initialize git in this folder (user management dashboard):
@@ -44,7 +44,7 @@
 
     Backend:
 
-        The backend uses Express.js for setting up APIs and CORS for cross-origin resource sharing.
+        The backend uses Express.js to set up APIs and CORS to share cross-origin resources.
 		axios is used for making HTTP requests.
 
 * Running the Application:
@@ -72,15 +72,15 @@ Develop a simple web application where users can view, add, edit, and delete use
 
 
 ## Tech Stack
-Use ReactJS, React Router, HTML, CSS, JavaScript and Github for hosting the repository.
+Use ReactJS, React Router, HTML, CSS, JavaScript, and GitHub to host the repository.
 
 ## Completion Instructions
 
 ### Functionality
 #### Must Have
 * View: Display all users by fetching data from the '/users' endpoint.
-* Add: Allow adding a new user by posting to the '/users' endpoint. (Note: JSONPlaceholder won't actually add the user, but will simulate a successful response.)
-* Edit: Allow editing an existing user. This should involve fetching the current data for a user, allowing for edits, and then putting the updated data back via the API.
+* Add: Allow adding a new user by posting to the '/users' endpoint. (Note: JSONPlaceholder won't add the user, but will simulate a successful response.)
+* Edit: Allow editing of an existing user. This should involve fetching the current data for a user, allowing for edits, and then putting the updated data back via the API.
 * Delete: Allow users to be deleted, by sending a delete request to the API.
 
 #### Nice to Have
